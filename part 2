@@ -1,0 +1,97 @@
+//HEADER
+// Anson Project 2 part 2
+// Auther: Anson
+// Class: CS161 Spring 2025
+// 4/15/2025
+// Java program that demonstrates gates using conditionals
+
+
+
+/*
+ * Psuedocode:
+ * 
+ * System start 
+ * Import the java scanner to allow for user input 
+ * 
+ * Bring the scanner into the program and print the users instructions
+ * 
+ * Ask for the user to input boolean a
+ * Ask for the user input boolean b 
+ * 
+ * set up all variables:
+ * (a&&b)
+ * a||b;		
+ *!(a&&b)
+ *
+ *connect users input with the functions
+ * 
+ * 
+ * 
+ * Output the results based on users input
+ * end program
+ */
+
+
+
+
+
+import java.util.Scanner;
+
+
+
+public class hellowrld
+{
+	// input scanner for user input
+	Scanner in = new Scanner (System.in);
+ 
+ 
+
+
+
+
+
+	//static boolean a = true;
+	//static boolean b = false;
+	
+
+	//---------------------------------------------------------------
+	
+	
+	
+	
+ 
+	
+	 public static void main(String[] args) {
+		 
+		 
+		 System.out.println("Welcome to the Logic Gate calculator!	\n"
+					+ "this program will take your input for two true or false values and determine the rusults for the logic gates.");
+				
+		 
+		Scanner in = new Scanner (System.in); 
+		System.out.println("Enter the first boolean value, either true or false: "); 
+		boolean a = in.nextBoolean();
+		
+	
+		
+		System.out.println("Great! Now enter the second boolean value, either true or false: "); 
+		boolean b = in.nextBoolean();
+	
+		boolean rusult = (a&&b);
+		boolean or = a||b;
+		boolean nand = !(a&&b); 
+		
+		
+	
+		{
+		System.out.println ("Wonderfull, here are the rusults,\n\nThe and gate is = " + rusult+"\n");
+		System.out.println ("The or gate = " + or +"\n");
+		System.out.println ("The NAND gate = " + nand+"\n");
+		
+		in.close();
+		}
+		}
+		
+		public void calculate() {
+		}
+}
