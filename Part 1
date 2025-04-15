@@ -1,0 +1,57 @@
+
+//HEADER
+// Anson Project 2
+// Auther: Anson
+// Class: CS161 Spring 2025
+// 4/14/2025
+// Retrieving user data to determine 0, -, +
+
+
+
+/*
+ * Pseudocode:
+ * 
+ * Program Start 
+ * Import the class: Scannner so that the code can retrieve user input 
+ * Set up scanner and allow user to input a number
+ * 
+ * set up a variable based on the input
+ * 
+ * take the input variable and use if else statements to determine if it is == o, 
+ * negative or positive 
+ * 
+ * Print the result
+ * 
+ * end program
+ */
+
+
+
+import java.util.Scanner;
+
+public class Anson
+{
+	
+public static void main(String args []) {
+Scanner in = new Scanner (System.in); 
+
+System.out.println("enter a floating-point number: ");
+double i = in.nextDouble();
+
+String abs = "";
+if (i == 0)
+{
+System.out.println("Zero");
+}
+else if (i > 0)
+{
+	System.out.println("Positive");
+}
+else
+{
+	System.out.println("Negative");
+}
+	
+}
+
+}
