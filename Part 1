@@ -15,43 +15,68 @@
  * Import the class: Scannner so that the code can retrieve user input 
  * Set up scanner and allow user to input a number
  * 
- * set up a variable based on the input
- * 
+ * set up a variables based on the input 
+ * abs and i 
+ * if abs is less than 1 print small if abs is larger than 1000000 print large
+ *
  * take the input variable and use if else statements to determine if it is == o, 
  * negative or positive 
  * 
- * Print the result
- * 
+ * Print the result which should include if the number is positive or negetive and also include large or 
+ * small if the number is less than 1 or greater than 1000000
+ * If it is zero the computer should output zero
  * end program
  */
-
 
 
 import java.util.Scanner;
 
 public class Anson
 {
-	
+	// input scanner for user input
+
 public static void main(String args []) {
 Scanner in = new Scanner (System.in); 
 
 System.out.println("enter a floating-point number: ");
+
+// set up varaibles 
+
 double i = in.nextDouble();
 
+
 String abs = "";
+if (Math.abs(i)<1.0)
+{
+abs = "small";
+}
+
+if (Math.abs(i)>1000000)
+{
+abs = "large";
+}
+
+
+
+// if else statements 
+
+
+
 if (i == 0)
 {
 System.out.println("Zero");
 }
 else if (i > 0)
 {
-	System.out.println("Positive");
+	System.out.println("the number is a " + abs + " positive number");
 }
 else
 {
-	System.out.println("Negative");
+	System.out.println("the number is a " + abs + " negative Number");
 }
 	
 }
 
 }
+
+// end 
