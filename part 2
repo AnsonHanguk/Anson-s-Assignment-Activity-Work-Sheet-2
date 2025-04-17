@@ -11,9 +11,10 @@
  * Psuedocode:
  * 
  * System start 
- * Import the java scanner to allow for user input 
+ * Import the javax.swing.JOptionPane
+ * create a GUI the user can interact with
  * 
- * Bring the scanner into the program and print the users instructions
+ * Bring the GUI into the program and print the users instructions
  * 
  * Ask for the user to input boolean a
  * Ask for the user input boolean b 
@@ -33,65 +34,64 @@
 
 
 
+import javax.swing.JOptionPane;
 
 
-import java.util.Scanner;
 
 
-
-public class hellowrld
+public class hellowrldGUI
 {
-	// input scanner for user input
-	Scanner in = new Scanner (System.in);
  
- 
-
-
-
-
-
-	//static boolean a = true;
-	//static boolean b = false;
-	
-
-	//---------------------------------------------------------------
-	
-	
-	
-	
- 
-	
 	 public static void main(String[] args) {
 		 
 		 
-		 System.out.println("Welcome to the Logic Gate calculator!	\n"
+		 JOptionPane.showMessageDialog(null, "Welcome to the Logic Gate calculator!	\n"
 					+ "this program will take your input for two true or false values and determine the rusults for the logic gates.");
-				
+		
 		 
-		Scanner in = new Scanner (System.in); 
-		System.out.println("Enter the first boolean value, either true or false: "); 
-		boolean a = in.nextBoolean();
+		 
+	
+		String inputA = JOptionPane.showInputDialog("Enter the first boolean value, either true or false: "); 
+		boolean a = Boolean.parseBoolean(inputA);
 		
 	
 		
-		System.out.println("Great! Now enter the second boolean value, either true or false: "); 
-		boolean b = in.nextBoolean();
+		String inputB = JOptionPane.showInputDialog("Enter the first boolean value, either true or false: "); 
+		boolean b = Boolean.parseBoolean(inputB);
 	
-		boolean rusult = (a&&b);
+		boolean Andgate = (a&&b);
 		boolean or = a||b;
 		boolean nand = !(a&&b); 
 		
 		
 	
-		{
-		System.out.println ("Wonderfull, here are the rusults,\n\nThe and gate is = " + rusult+"\n");
-		System.out.println ("The or gate = " + or +"\n");
-		System.out.println ("The NAND gate = " + nand+"\n");
 		
-		in.close();
-		}
+	String rusultMessage = "RUSULTS:\n\n" + "AND GATE = " + Andgate + "\n" +
+	"OR GATE = " +or +"\n"+
+	"NAND GATE = " + nand+"\n";
+		
+	{
 		}
 		
-		public void calculate() {
+	 JOptionPane.showMessageDialog(null, rusultMessage);
 		}
 }
+	 
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
