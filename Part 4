@@ -1,0 +1,72 @@
+//HEADER
+// Anson Project 2 part 2
+// Auther: Anson
+// Class: CS161 Spring 2025
+// 4/17/2025
+// Java program that  if a grade is passing or failing  
+
+
+
+/*
+ * 
+ * Psuecode
+ * 
+ * Start program
+ * import javax.swing.JOptionPane to create an interactive GUI
+ * 
+ * Print instructions to GUI
+ * 
+ * Allow user to input their grade
+ *
+ * Program determines if the grade is passing or failing with if else
+ * 
+ * if the grade is 50 or more print pass
+ * 
+ * if the grade is less than 50 print fail
+ * 
+ * end program
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+import javax.swing.JOptionPane;
+
+public class Gradechecker
+{
+	
+public static void main(String args []) {
+
+
+	 JOptionPane.showMessageDialog(null, "Welcome to the Grade Check Calculator!	\n"
+				+ "This program will take your test rusult and determine if you pass or fail");
+	 String inputA = JOptionPane.showInputDialog("Enter the grade bellow"); 
+		double a = Double.parseDouble(inputA);
+
+
+
+
+
+// if else statements 
+
+
+
+
+
+
+
+if (a > 50)
+{
+	JOptionPane.showMessageDialog(null, "Grade is passing");
+}
+else
+{
+	JOptionPane.showMessageDialog(null, "Grade is failing");
+}
+	
+}
+
+}
